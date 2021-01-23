@@ -1,0 +1,21 @@
+<nav id="mainNav" class="navbar" role="navigation" aria-label="main navigation">
+  <div class="nav-container">
+    <div class="mobile-layout">
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        Edgar's Portfolio
+      </a>
+      <div class="navbar-end navbar-menu">
+        <div class="nav-links">
+          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.ProjectsLink -}}">{{- .Site.Params.ProjectsLabel -}}</a>
+          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.BlogsLink -}}">{{ .Site.Params.BlogLabel }}</a>
+          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.AboutLink -}}">{{ .Site.Params.AboutLabel }}</a>
+          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.ContactMeLink -}}">{{ .Site.Params.ContactMeLabel }}</a>
+        </div>
+      </div>
+    </div>
+    <button class="burger-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span aria-hidden="true" class="bars"></span>
+    </button>
+  </div>
+</nav>

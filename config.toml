@@ -7,6 +7,18 @@ assetDir = "static/assets"
 [params]
     headerTitle = "Edgar Negrón Rabell"
 
+    projectsLabel = "Projects"
+    projectsLink = "/projects"
+
+    blogLabel = "Blog"
+    bloglink = "/blog"
+
+    aboutLabel = "About"
+    aboutlink = "/about"
+
+    contactMeLabel = "Contact Me"
+    contactMelink = "/contact-me"
+
 
 
 [module]
