@@ -2,9 +2,7 @@ node_modules
 
 .DS_Store
 package-lock.json
-WB-Data-Lab/resources/*
-WB-Data-Lab/static/assets/scss/bootstrap/*
-WB-Data-Lab/static/vendor/
+
 
 ### Hugo ###
 # Generated files by hugo
