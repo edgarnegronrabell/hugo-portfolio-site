@@ -1,0 +1,7 @@
+baseURL = "https://edgarnegron.dev/"
+languageCode = "en-us"
+title = "Edgar Negrón's Portfolio"
+
+assetDir = "static/assets"
+
+headerTitle = "Edgar Negrón Rabell"

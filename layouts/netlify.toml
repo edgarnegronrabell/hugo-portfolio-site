@@ -1,0 +1,31 @@
+[build]
+publish = "public"
+command = "hugo -D"
+
+[context.development.environment]
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "development"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo -D"
+
+[context.split1.environment]
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "development"
+
+[context.deploy-preview]
+command = "hugo -D"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.80.0"
+
+[context.branch-deploy]
+command = "hugo -D"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.80.0"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
