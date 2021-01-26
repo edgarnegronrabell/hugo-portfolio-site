@@ -1,0 +1,15 @@
+{{- define "main" -}}
+	<main class="main">
+
+    {{ if eq .Page.Section "projects" }}
+        {{- partial "list-partials/projects-list-page.html" . -}}
+    {{- end -}}
+	{{ if eq .Page.Section "about" }}
+		{{/*  {{- partial "list-partials/about-page.html" . }}  */}}
+	{{- end -}}
+
+	{{ if eq .Page.Section "blog" }}
+		{{/*  {{- partial "list-partials/university-data-fellows-list-page.html" . -}}  */}}
+	{{- end -}}
+	</main>
+{{- end -}} 
