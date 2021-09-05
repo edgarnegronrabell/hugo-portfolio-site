@@ -6,10 +6,10 @@
       </a>
       <div class="navbar-end navbar-menu">
         <div class="nav-links">
-          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.ProjectsLink -}}">{{- .Site.Params.ProjectsLabel -}}</a>
-          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.BlogsLink -}}">{{ .Site.Params.BlogLabel }}</a>
-          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.AboutLink -}}">{{ .Site.Params.AboutLabel }}</a>
-          <a href="{{- .Site.BaseURL -}}{{- .Site.Params.ContactMeLink -}}">{{ .Site.Params.ContactMeLabel }}</a>
+          <a id="projects-link" href="{{- .Site.BaseURL -}}{{- .Site.Params.ProjectsLink -}}">{{- .Site.Params.ProjectsLabel -}}</a>
+          {{/*  <a id="blogs-link" href="{{- .Site.BaseURL -}}{{- .Site.Params.BlogsLink -}}">{{ .Site.Params.BlogLabel }}</a>  */}}
+          <a id="about-link" href="{{- .Site.BaseURL -}}{{- .Site.Params.AboutLink -}}">{{ .Site.Params.AboutLabel }}</a>
+          <a id="contact-link" href="{{- .Site.BaseURL -}}{{- .Site.Params.ContactMeLink -}}">{{ .Site.Params.ContactMeLabel }}</a>
         </div>
       </div>
     </div>

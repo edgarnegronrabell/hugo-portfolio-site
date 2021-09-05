@@ -1,3 +1,5 @@
+//CSS Resets
+
 html,
 body,
 body div,
@@ -108,9 +110,9 @@ code {
   cursor: text;
 }
 
-/* 
-textarea and input[type="text"] already receive 
-"cursor: text" via browsers' base stylesheets 
+/*
+textarea and input[type="text"] already receive
+"cursor: text" via browsers' base stylesheets
 */
 
 a,
@@ -156,7 +158,7 @@ ul {
 }
 
 li {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 blockquote,
@@ -328,62 +330,60 @@ input[type="button"] {
   clear: both;
 }
 
+//End of Reset
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  min-height: 100%;
+}
+
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
-  
-  .main {
-    margin-top: 5rem;
-  }
+h1 {
+  font-size: 6rem;
+}
 
-  h1 {
-      font-size: 6rem;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
-  
-  .footer {
-    flex-shrink: 0;
-  }
+}
 
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-  
-  @media (min-width: 1500px) {
-    .container {
-      max-width: 1400px;
-    }
-  }
+}
 
-  @media (min-width: 1700px) {
-    .container {
-      max-width: 1500px;
-    }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1500px;
+  }
+}
