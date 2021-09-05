@@ -9,20 +9,44 @@
   h1 {
     color: $magenta;
     text-transform: uppercase;
+    margin: 0.5em 0;
+  }
+
+  h2 {
+    color: $violet;
+    font-size: 2rem;
   }
 
   .projects-card-grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    font-weight: 900;
+    margin: 0.5em 0;
   }
 
-  .project-card {
+  .project-summary {
+    background-color: $black;
+    color: $content-4;
+    display: flex;
+    padding: 1.5em;
+    min-height: 377px;
+    margin: 2em 0;
   }
 
-  .project-name {
-    img {
-      max-width: 100px;
+  .project-info {
+    margin-left: auto;
+    max-width: 500px;
+    margin-left: 2.5em;
+  }
+
+  img {
+    max-width: 100px;
+
+    @media (min-width: 976px) {
+      & {
+        max-width: 300px;
+      }
     }
   }
 }
